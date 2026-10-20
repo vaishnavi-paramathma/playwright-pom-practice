@@ -1,13 +1,5 @@
 import { Locator, Page } from '@playwright/test';
 
-/**
- * Element discovery for the login page of the-internet.
- *
- * Responsibility: WHERE the elements are — nothing else.
- * No navigation, no interactions, no assertions.
- * Creating a Locator performs zero browser work: locators are
- * lazy handles that only resolve when an action uses them.
- */
 export class LoginLocators {
   readonly usernameInput: Locator;
   readonly passwordInput: Locator;
